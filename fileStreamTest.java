@@ -21,7 +21,13 @@ public class fileStreamTest {
  
         writer.append("English");
         // 刷新缓存冲,写入到文件,如果下面已经没有写入的内容了,直接close也会写入
+        writer.append("\r\n");
+        // 换行
+        
+        // 刷新缓冲区,写入到文件
  
+        writer.append("孙蕊, I love u!");
+
         writer.close();
         // 关闭写入流,同时会把缓冲区内容写入文件,所以上面的注释掉
  
